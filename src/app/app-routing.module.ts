@@ -3,13 +3,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { RegistryPageComponent } from './registry-page/registry-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
+import { RsvpPageComponent } from './rsvp-page/rsvp-page.component';
 
 
 const routes: Routes = [
-  { path:  '', redirectTo:  'home', pathMatch:  'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'home',
     component: HomePageComponent
+  },
+  {
+    path: 'rsvp',
+    component: RsvpPageComponent
   },
   {
     path: 'registry',

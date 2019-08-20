@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { RegistryPageComponent } from './registry-page/registry-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
+import { RsvpPageComponent } from './rsvp-page/rsvp-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     RegistryPageComponent,
-    GalleryPageComponent
+    GalleryPageComponent,
+    RsvpPageComponent
   ],
   imports: [
     BrowserModule,

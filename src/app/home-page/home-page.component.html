@@ -1,48 +1,37 @@
-<div id="backgroundImage">
-    <div>
-        <h2>Amanda & Christian</h2>
-        <h1>Brooks</h1>
+<div id="section-1">
+  <div>
+    <h1 id="names">Christian + Amanda</h1>
+    <h4 id="date"> MAY 17, 2020</h4>
+    <a id="rsvp" class="btn btn-dark text-light" [routerLink]="'/rsvp'"><span>RSV</span>P</a>
+  </div>
+</div>
+
+<div id="section-2">
+  <div class="row">
+    <div id="info" class="col col-sm-5">
+      <h1 id="header">Details</h1>
+      <h5 id="title" class="mb-3">The Ceremony and Reception</h5>
+      <h5 id="time" class="mb-3">4:00pm (Reception to follow)</h5>
+      <h6 class="location mb-2">2463 Turnersburg Hwy.</h6>
+      <h6 class="location">Harmony, North Carolina</h6>
+      <a id="directions" class="btn btn-dark text-light"
+        href="https://www.google.com/maps/place/1812+Hitching+Post+Weddings/@35.913648,-80.800068,17z/data=!3m1!4b1!4m2!3m1!1s0x8853dffcc67a3361:0xdc34db702a6d1944?hl=en-US"><span>GET
+          DIRECTION</span>S</a>
+      <!-- <h6>The Ceremony and Reception</h6> -->
     </div>
+    <div id="image" class="col col-sm-7">
+    </div>
+  </div>
 </div>
-<div *ngIf="show_form" [@slideInOut] id="slideDownForm">
-    <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Example select</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2">Example multiple select</label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-      </form>
-</div>
-<div id="rsvpChoiceContainer">
+
+
+<!-- <div id="rsvpChoiceContainer">
     <button (click)="onAccept($event)" data-for="slideDownForm" id="acceptButton" class="btn btn-light h-100 w-50 border border-right border-dark rounded-0">
         accept
     </button>
     <button id="declineButton" class="btn btn-light h-100 w-50 rounded-0">
         decline
     </button>
-</div>
+</div> -->
 
 <router-outlet></router-outlet>
