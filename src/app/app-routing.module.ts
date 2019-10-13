@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomePageComponent } from './home-page/home-page.component';
-import { RegistryPageComponent } from './registry-page/registry-page.component';
-import { GalleryPageComponent } from './gallery-page/gallery-page.component';
-import { RsvpPageComponent } from './rsvp-page/rsvp-page.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { GalleryPageComponent } from './components/gallery-page/gallery-page.component';
+import { RsvpPageComponent } from './components/rsvp-page/rsvp-page.component';
 
 
 const routes: Routes = [
@@ -17,13 +16,9 @@ const routes: Routes = [
     component: RsvpPageComponent
   },
   {
-    path: 'registry',
-    component: RegistryPageComponent
-  },
-  {
     path: 'gallery',
     component: GalleryPageComponent
-  },
+  }
 ];
 
 @NgModule({

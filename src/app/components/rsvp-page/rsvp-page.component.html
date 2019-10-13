@@ -1,0 +1,19 @@
+<div id="container">
+    <div>
+        <div>
+            Enter the invite code found on your invite card below.<br>
+            After that confirm invite response, then hit submit!
+        </div>
+        <form method="get">
+            <div class="form-group">
+                <input id="invite-code" class="form-control" type="text" placeholder="Enter invite code..."
+                    [formControl]="rsvpControl">
+                <button class="btn btn-light text-dark">Yes, I'm so excited! :D</button>
+                <button class="btn btn-light text-dark">Sorry, can't make it D:</button>
+                <!-- Accept -->
+                <!-- Decline -->
+                <button class="btn btn-dark text-light" type="submit">Submit Response</button>
+            </div>
+        </form>
+    </div>
+</div>
