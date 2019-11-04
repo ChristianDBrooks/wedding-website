@@ -1,26 +1,25 @@
 #section-1
     // Text
-    display: flex
-    justify-content: flex-end
+    // display: flex
+    // justify-content: flex-end
     // Background Image
     background: url('src/assets/images/IMG_0404.jpg')
     background-size: cover
-    height: 100vh
+    height: 500px
     background-position: center
-    padding: 75px 30px 0 0
+    // padding: 75px 30px 0 0
     div
-        text-align: center
+        // text-align: center
     #names
         color: white
-        padding-top: 10px
+        // padding-top: 10px
         font-family: 'Belmont-Bold', cursive
         font-size: 120px
-        text-align: center
     #date
         color: white
         font-family: 'Montserrat', sans-serif
         font-size: 18px
-        text-align: center
+        // text-align: center
         font-weight: 700
         letter-spacing: 18px
     #rsvp
@@ -28,18 +27,24 @@
         background-color: white
         font-family: 'Montserrat', sans-serif
         font-size: 18px
-        text-align: center
+        // text-align: center
         font-weight: 300
-        margin-top: 23px
+        // margin-top: 23px
         border-radius: 100px
-        padding: 12px 24px
+        // padding: 12px 24px
         span
-        letter-spacing: 10px
+            letter-spacing: 10px
+
+#divide
+    background: url('src/assets/images/IMG_0445.jpg')
+    background-size: cover
+    height: 250px
+    background-position: center
 
 #section-2
-    height: 100vh
+    // height: 500px
     #info
-        padding-top: 50px
+        // padding-top: 50px
         text-align: center
         #header
             font-family: 'Belmont-Bold', cursive
@@ -63,61 +68,91 @@
             text-align: center
             font-weight: 300
             border-radius: 100px
-            padding: 10px 15px
+            // padding: 10px 15px
             span
                 letter-spacing: 4px
-            
-
     #image
         // Background Image
         background: url('src/assets/images/reception-scene-2.jpg')
         background-size: cover
-        height: 100vh
         background-position: center
+        height: 500px
+        font-size: 12px
+
+#section-3
+    #header
+        font-family: 'Belmont-Bold', cursive
+        font-size: 120px
 
 #section-4
-    // Text
-    display: flex
-    flex-direction: column
-    align-items: center
-    text-align: center
+    // display: flex
+    // flex-direction: column
+    // align-items: center
+    // text-align: center
     // Background Image
     background: url('src/assets/images/IMG_0732.jpg')
     background-size: cover
-    height: 220vh
+    height: 750px
     background-position: center
     color: white
-    padding: 100px
+    // padding: 100px
     #header
         font-family: 'Belmont-Bold', cursive
         font-size: 120px
     #thanks
-        width: 600px
+        // width: 600px
         font-family: 'Montserrat', sans-serif
         font-weight: 400
         font-size: 16px
-    .row
-        padding-top: 15px
-        width: 600px
+    #target-logo
+        margin: 0 auto
+    #bbb-logo
+        margin: 0 auto
+
+@media only screen and (max-width: 576px)
+    #section-1
+        #names
+            font-size: 70px
+        #date
+            font-size: 12px
+
+    #section-2
+        #info
+            #header
+                font-size: 90px
+        #image
+            height: 250px
+
+    #section-3
+        font-family: 'Montserrat', sans-serif
+        font-weight: 400
+        font-size: 16px
+        #header
+            font-size: 90px
+        #story
+
+    #section-4
+        height: 650px
+        #header
+            font-size: 90px
+        #thanks
+            font-size: 12px
         #target-logo
-            width: 200px
+            width: 150px
             img
-                max-width:100%
-                height:auto
+                max-width: 100%
+                height: auto
         #bbb-logo
-            margin-left: auto
-            flex-align: right
-            width: 200px
+            // margin-left: auto
+            // flex-align: right
+            width: 150px
             img
-                max-width:100%
-                height:auto
+                max-width: 100%
+                height: auto
 
 // #rsvpChoiceContainer
 //     font-family: 'Alegreya SC', serif
 //     height: 15vh
 
-//     button  
+//     button
 //         font-size: 30px
-        
-
-
