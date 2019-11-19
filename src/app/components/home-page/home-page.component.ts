@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, state, style, animate, transition} from '@angular/animations';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-home-page',
@@ -9,11 +9,11 @@ import { trigger, state, style, animate, transition} from '@angular/animations';
     // animation triggers go here
     trigger('slideInOut', [
       transition(':enter', [
-        style({transform: 'translateY(-100%)'}),
-        animate('500ms ease-in', style({transform: 'translateY(0%)'}))
+        style({ transform: 'translateY(-100%)' }),
+        animate('500ms ease-in', style({ transform: 'translateY(0%)' }))
       ]),
       transition(':leave', [
-        animate('500ms ease-in', style({transform: 'translateY(-100%)'}))
+        animate('500ms ease-in', style({ transform: 'translateY(-100%)' }))
       ])
     ])
   ]
